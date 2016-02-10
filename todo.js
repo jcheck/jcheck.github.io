@@ -19,7 +19,7 @@ function addItem() {
   delete_link = '<a href="#" class="link-delete">(Delete)</a>'
   $("ol").append("<li>" + text + " " + delete_link + "</li>");
   //
-  numItems = $("li").length;
+  numItems = $("#selected li").length;
   $(".total").html(numItems + " items");
   // .html function takes whatever .html is in there and then replace with whatever I dictate,
 
